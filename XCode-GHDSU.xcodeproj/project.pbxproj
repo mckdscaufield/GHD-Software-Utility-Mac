@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AE7E33B56E5F041128246AC /* Pods_XCode_GHDSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7660BCCCB9B2FFD009189DBD /* Pods_XCode_GHDSU.framework */; };
+		B681D41029D3474300FFE1B5 /* GHDSUAPI in Resources */ = {isa = PBXBuildFile; fileRef = B681D40F29D3474300FFE1B5 /* GHDSUAPI */; };
+		B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688682C29B0B6CF00D9F185 /* ShellView.swift */; };
 		B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */; };
-		B6C6560329AFB90E00AC8C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6560229AFB90E00AC8C63 /* ContentView.swift */; };
 		B6C6560529AFB90F00AC8C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560429AFB90F00AC8C63 /* Assets.xcassets */; };
 		B6C6560829AFB90F00AC8C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */; };
-		B6C6561329AFB90F00AC8C63 /* XCode_GHDSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6561229AFB90F00AC8C63 /* XCode_GHDSUTests.swift */; };
-		B6C6561D29AFB90F00AC8C63 /* XCode_GHDSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6561C29AFB90F00AC8C63 /* XCode_GHDSUUITests.swift */; };
-		B6C6561F29AFB90F00AC8C63 /* XCode_GHDSUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6561E29AFB90F00AC8C63 /* XCode_GHDSUUITestsLaunchTests.swift */; };
+		B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4537329B0B7BE00F8D5DA /* InstallView.swift */; };
+		B6D4537A29B0E71800F8D5DA /* AnimationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4537929B0E71800F8D5DA /* AnimationTesting.swift */; };
+		B6EAA95029E710AC0052D62B /* SplashShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EAA94F29E710AC0052D62B /* SplashShape.swift */; };
+		B6F2390C29E7115A002FCF06 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2390B29E7115A002FCF06 /* SplashView.swift */; };
+		DD5C446CB944EA1E898FCC25 /* Pods_XCode_GHDSU_XCode_GHDSUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A331B7C066A7614BC9346B3 /* Pods_XCode_GHDSU_XCode_GHDSUUITests.framework */; };
+		EAA16495EE658E8A934177F2 /* Pods_XCode_GHDSUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4423F626E144186BFDC537 /* Pods_XCode_GHDSUTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +39,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35BE53BF80C85EDBFEF042F5 /* Pods-XCode-GHDSUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSUTests.release.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSUTests/Pods-XCode-GHDSUTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A331B7C066A7614BC9346B3 /* Pods_XCode_GHDSU_XCode_GHDSUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCode_GHDSU_XCode_GHDSUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7660BCCCB9B2FFD009189DBD /* Pods_XCode_GHDSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCode_GHDSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FAC423898ED1C3FED3A842 /* Pods-XCode-GHDSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU.debug.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU.debug.xcconfig"; sourceTree = "<group>"; };
+		780A4AD6B3EA9ACC5F423966 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU-XCode-GHDSUUITests.debug.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU-XCode-GHDSUUITests/Pods-XCode-GHDSU-XCode-GHDSUUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B681D40F29D3474300FFE1B5 /* GHDSUAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GHDSUAPI; sourceTree = "<group>"; };
+		B688682C29B0B6CF00D9F185 /* ShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellView.swift; sourceTree = "<group>"; };
+		B6AF844A29C3553C00E93971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B6C655FD29AFB90E00AC8C63 /* XCode-GHDSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCode-GHDSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUApp.swift; sourceTree = "<group>"; };
-		B6C6560229AFB90E00AC8C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6C6560429AFB90F00AC8C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCode_GHDSU.entitlements; sourceTree = "<group>"; };
 		B6C6560E29AFB90F00AC8C63 /* XCode-GHDSUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCode-GHDSUTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C6561229AFB90F00AC8C63 /* XCode_GHDSUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUTests.swift; sourceTree = "<group>"; };
 		B6C6561829AFB90F00AC8C63 /* XCode-GHDSUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCode-GHDSUUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C6561C29AFB90F00AC8C63 /* XCode_GHDSUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUUITests.swift; sourceTree = "<group>"; };
-		B6C6561E29AFB90F00AC8C63 /* XCode_GHDSUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6D4537329B0B7BE00F8D5DA /* InstallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallView.swift; sourceTree = "<group>"; };
+		B6D4537929B0E71800F8D5DA /* AnimationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTesting.swift; sourceTree = "<group>"; };
+		B6EAA94F29E710AC0052D62B /* SplashShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashShape.swift; sourceTree = "<group>"; };
+		B6F2390B29E7115A002FCF06 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C52FF156B582BC3BE8EE8D24 /* Pods-XCode-GHDSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU.release.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU.release.xcconfig"; sourceTree = "<group>"; };
+		C797168D73158EBD0D3C115A /* Pods-XCode-GHDSUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSUTests.debug.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSUTests/Pods-XCode-GHDSUTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4423F626E144186BFDC537 /* Pods_XCode_GHDSUTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCode_GHDSUTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F203E4335E04E3E09150EE92 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU-XCode-GHDSUUITests.release.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU-XCode-GHDSUUITests/Pods-XCode-GHDSU-XCode-GHDSUUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE7E33B56E5F041128246AC /* Pods_XCode_GHDSU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA16495EE658E8A934177F2 /* Pods_XCode_GHDSUTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +85,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5C446CB944EA1E898FCC25 /* Pods_XCode_GHDSU_XCode_GHDSUUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EBC313A09E0FFA8AE81978B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7660BCCCB9B2FFD009189DBD /* Pods_XCode_GHDSU.framework */,
+				6A331B7C066A7614BC9346B3 /* Pods_XCode_GHDSU_XCode_GHDSUUITests.framework */,
+				DA4423F626E144186BFDC537 /* Pods_XCode_GHDSUTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6C655F429AFB90D00AC8C63 = {
 			isa = PBXGroup;
 			children = (
 				B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */,
-				B6C6561129AFB90F00AC8C63 /* XCode-GHDSUTests */,
-				B6C6561B29AFB90F00AC8C63 /* XCode-GHDSUUITests */,
 				B6C655FE29AFB90E00AC8C63 /* Products */,
+				B718D956C8A161F0EB1E7AA2 /* Pods */,
+				8EBC313A09E0FFA8AE81978B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +125,18 @@
 		B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */ = {
 			isa = PBXGroup;
 			children = (
+				B6F2390F29E834F6002FCF06 /* Splash */,
+				B681D40F29D3474300FFE1B5 /* GHDSUAPI */,
+				B6AF844A29C3553C00E93971 /* Info.plist */,
 				B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */,
-				B6C6560229AFB90E00AC8C63 /* ContentView.swift */,
+				B6D4537329B0B7BE00F8D5DA /* InstallView.swift */,
 				B6C6560429AFB90F00AC8C63 /* Assets.xcassets */,
 				B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */,
 				B6C6560629AFB90F00AC8C63 /* Preview Content */,
+				B6D4537929B0E71800F8D5DA /* AnimationTesting.swift */,
+				B688682C29B0B6CF00D9F185 /* ShellView.swift */,
+				B6EAA94F29E710AC0052D62B /* SplashShape.swift */,
+				B6F2390B29E7115A002FCF06 /* SplashView.swift */,
 			);
 			path = "XCode-GHDSU";
 			sourceTree = "<group>";
@@ -112,21 +149,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B6C6561129AFB90F00AC8C63 /* XCode-GHDSUTests */ = {
+		B6F2390F29E834F6002FCF06 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				B6C6561229AFB90F00AC8C63 /* XCode_GHDSUTests.swift */,
 			);
-			path = "XCode-GHDSUTests";
+			path = Splash;
 			sourceTree = "<group>";
 		};
-		B6C6561B29AFB90F00AC8C63 /* XCode-GHDSUUITests */ = {
+		B718D956C8A161F0EB1E7AA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6C6561C29AFB90F00AC8C63 /* XCode_GHDSUUITests.swift */,
-				B6C6561E29AFB90F00AC8C63 /* XCode_GHDSUUITestsLaunchTests.swift */,
+				76FAC423898ED1C3FED3A842 /* Pods-XCode-GHDSU.debug.xcconfig */,
+				C52FF156B582BC3BE8EE8D24 /* Pods-XCode-GHDSU.release.xcconfig */,
+				780A4AD6B3EA9ACC5F423966 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.debug.xcconfig */,
+				F203E4335E04E3E09150EE92 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.release.xcconfig */,
+				C797168D73158EBD0D3C115A /* Pods-XCode-GHDSUTests.debug.xcconfig */,
+				35BE53BF80C85EDBFEF042F5 /* Pods-XCode-GHDSUTests.release.xcconfig */,
 			);
-			path = "XCode-GHDSUUITests";
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6C6562229AFB90F00AC8C63 /* Build configuration list for PBXNativeTarget "XCode-GHDSU" */;
 			buildPhases = (
+				F1E0FD1FBFF1414D44271D52 /* [CP] Check Pods Manifest.lock */,
 				B6C655F929AFB90E00AC8C63 /* Sources */,
 				B6C655FA29AFB90E00AC8C63 /* Frameworks */,
 				B6C655FB29AFB90E00AC8C63 /* Resources */,
+				A1C3757EAD8228EE6A84D91C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6C6562529AFB90F00AC8C63 /* Build configuration list for PBXNativeTarget "XCode-GHDSUTests" */;
 			buildPhases = (
+				48086A964B2588DB9589F2A2 /* [CP] Check Pods Manifest.lock */,
 				B6C6560A29AFB90F00AC8C63 /* Sources */,
 				B6C6560B29AFB90F00AC8C63 /* Frameworks */,
 				B6C6560C29AFB90F00AC8C63 /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6C6562829AFB90F00AC8C63 /* Build configuration list for PBXNativeTarget "XCode-GHDSUUITests" */;
 			buildPhases = (
+				5CD590001295F7EABACBC9A0 /* [CP] Check Pods Manifest.lock */,
 				B6C6561429AFB90F00AC8C63 /* Sources */,
 				B6C6561529AFB90F00AC8C63 /* Frameworks */,
 				B6C6561629AFB90F00AC8C63 /* Resources */,
+				4BF54FB8F2FAB43639CE8048 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +281,7 @@
 			files = (
 				B6C6560829AFB90F00AC8C63 /* Preview Assets.xcassets in Resources */,
 				B6C6560529AFB90F00AC8C63 /* Assets.xcassets in Resources */,
+				B681D41029D3474300FFE1B5 /* GHDSUAPI in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +301,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48086A964B2588DB9589F2A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCode-GHDSUTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF54FB8F2FAB43639CE8048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU-XCode-GHDSUUITests/Pods-XCode-GHDSU-XCode-GHDSUUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU-XCode-GHDSUUITests/Pods-XCode-GHDSU-XCode-GHDSUUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU-XCode-GHDSUUITests/Pods-XCode-GHDSU-XCode-GHDSUUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CD590001295F7EABACBC9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCode-GHDSU-XCode-GHDSUUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C3757EAD8228EE6A84D91C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E0FD1FBFF1414D44271D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCode-GHDSU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6C655F929AFB90E00AC8C63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C6560329AFB90E00AC8C63 /* ContentView.swift in Sources */,
+				B6EAA95029E710AC0052D62B /* SplashShape.swift in Sources */,
+				B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */,
+				B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */,
 				B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */,
+				B6D4537A29B0E71800F8D5DA /* AnimationTesting.swift in Sources */,
+				B6F2390C29E7115A002FCF06 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C6561329AFB90F00AC8C63 /* XCode_GHDSUTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C6561F29AFB90F00AC8C63 /* XCode_GHDSUUITestsLaunchTests.swift in Sources */,
-				B6C6561D29AFB90F00AC8C63 /* XCode_GHDSUUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +563,7 @@
 		};
 		B6C6562329AFB90F00AC8C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FAC423898ED1C3FED3A842 /* Pods-XCode-GHDSU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,12 +576,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "McK.XCode-GHDSU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -439,6 +593,7 @@
 		};
 		B6C6562429AFB90F00AC8C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52FF156B582BC3BE8EE8D24 /* Pods-XCode-GHDSU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,12 +606,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "McK.XCode-GHDSU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -466,6 +623,7 @@
 		};
 		B6C6562629AFB90F00AC8C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C797168D73158EBD0D3C115A /* Pods-XCode-GHDSUTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +643,7 @@
 		};
 		B6C6562729AFB90F00AC8C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BE53BF80C85EDBFEF042F5 /* Pods-XCode-GHDSUTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +663,7 @@
 		};
 		B6C6562929AFB90F00AC8C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780A4AD6B3EA9ACC5F423966 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +681,7 @@
 		};
 		B6C6562A29AFB90F00AC8C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F203E4335E04E3E09150EE92 /* Pods-XCode-GHDSU-XCode-GHDSUUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
