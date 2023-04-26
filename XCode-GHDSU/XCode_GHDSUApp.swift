@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 enum WindowSize {
     static let min = CGSize(width: 400, height: 300)
@@ -80,20 +81,20 @@ class ErrorInfo: ObservableObject {
     @Published var title: String
     @Published var message: String
     @Published var isError: Bool
-    @Published var allowRetry: Bool
+//    @Published var allowRetry: Bool
     
-    init(title: String = "Package info missing. Please contact GHD", msg: String = "", active: Bool = false, allowRetry: Bool = false) {
+    init(title: String = "Package info missing. Please contact GHD", msg: String = "", active: Bool = false) {
         self.title = title
         self.message = msg
         self.isError = active
-        self.allowRetry = allowRetry
+//        self.allowRetry = allowRetry
     }
 
     func clear() {
         self.title = ""
         self.message = ""
         self.isError = false
-        self.allowRetry = false
+//        self.allowRetry = false
     }
 }
 
@@ -101,9 +102,11 @@ struct ErrorView: View {
     @State var errorInfo = ErrorInfo()
     
     var body: some View {
-        Color(NSColor.underPageBackgroundColor).ignoresSafeArea()
+//        Color(NSColor.underPageBackgroundColor).ignoresSafeArea().frame(height: 0)
+        Color(NSColor.windowBackgroundColor).ignoresSafeArea().frame(height: 0)
         
         Text(errorInfo.title)
+            .lineLimit(2).multilineTextAlignment(.center)
             .font(.system(size: 20)).bold();
         //error image
         Image(systemName: "exclamationmark.octagon")
@@ -115,56 +118,81 @@ struct ErrorView: View {
             Text("Error message:").font(.system(size: 12));
             Text(errorInfo.message).font(.system(size:12));
         }
-        
-        if (errorInfo.allowRetry) {
-            Button("Try Again", action: {} ).buttonStyle(McKButt())
+        else {
+            Spacer().frame(width: 10, height: 10)
+        }
+//
+//        if (errorInfo.allowRetry) {
+//            Button("Try Again", action: {} ).buttonStyle(McKButt())
+//        }
+    }
+}
+
+//temporary logger functionality
+class Logger {
+    static func log(_ message: String) {
+        guard let logFile = URL(string: FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!.absoluteString + "/Logs/ghdsu.log")
+        else { return }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss"
+        let timestamp = formatter.string(from: Date())
+        guard let data = (timestamp + ": " + message + "\n").data(using: String.Encoding.utf8) else { return }
+
+        if FileManager.default.fileExists(atPath: logFile.path) {
+            if let fileHandle = try? FileHandle(forWritingTo: logFile) {
+                fileHandle.seekToEndOfFile()
+                fileHandle.write(data)
+                fileHandle.closeFile()
+            }
+        }
+        else {
+            try? data.write(to: logFile, options: .atomicWrite)
         }
     }
 }
 
-class TransparentWindowView: NSView {
-  override func viewDidMoveToWindow() {
-      window?.backgroundColor = NSColor.darkGray
-    super.viewDidMoveToWindow()
-  }
+//force app to close when window closed, because it no longer does this automatically
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationShouldTerminateAfterLastWindowClosed(_ application: NSApplication) -> Bool {
+        return true
+    }
+    func applicationWillUpdate(_ notification: Notification) {
+        if let menu = NSApplication.shared.mainMenu {
+            // remove all menu items after the app name
+            menu.items.removeSubrange(1...)
+        }
+        
+    }
 }
-
-struct TransparentWindow: NSViewRepresentable {
-   func makeNSView(context: Self.Context) -> NSView { return TransparentWindowView() }
-   func updateNSView(_ nsView: NSView, context: Context) { }
-}
-
-//
-//struct VisualEffectView: NSViewRepresentable {
-//    func makeNSView(context: Context) -> NSVisualEffectView {
-//        let view = NSVisualEffectView()
-//
-//        view.blendingMode = .behindWindow
-////        view.blendingMode = .withinWindow
-//        view.state = .active
-//        view.material = .underWindowBackground
-////        view.material = .windowBackground
-//
-//        return view
-//    }
-//
-//    func updateNSView(_ nsView: NSVisualEffectView, context: Context) {
-//        //
-//    }
-//}
 
 @main
     struct XCode_GHDSUApp: App {
+        //instantiate the app delegate so that it overrides the behaviour of closing the window
+        @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+        
         @State var installView = true;
         //to bypass shellview, uncomment below
-//        @State private var openedURL: URL = URL(string: "ghdsu://params?id=878&name=VLC%20Media%20Player&time=5&path=VLC.app&size=98765")!
+        //        @State private var openedURL: URL = URL(string: "ghdsu://params?id=878&name=VLC%20Media%20Player&time=5&path=VLCs.app&size=98765")!
         //to immitate URL with params, uncomment below
-//        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=2b10e182db83db44d3829475db96190b&os=macOS&fmno=154166")!
+        //        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=2b10e182db83db44d3829475db96190b&os=macOS&fmno=154166")!
         //new format
-        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=d680ec4387ede59020d1670a0cbb35a6&fmno=11949646")!
-        //ghdsoftwareutility://ghd/?catItemID=2b10e182db83db44d3829475db96190b&os=macOS&fmno=154166
+        
+        //kate's software
+        //        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=d680ec4387ede59020d1670a0cbb35a6&fmno=11949646")!
+        
+        // FOR VLC FROM STORE:
+        //        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=69e00687dbc6b600b6e5ffb5ae961979&fmno=122912")!
+        
+        //slack
+        //        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=99f04687dbc6b600b6e5ffb5ae96195b&fmno=122912")!
+        //        ghdsoftwareutility://ghd/?catItemID=2b10e182db83db44d3829475db96190b&os=macOS&fmno=154166
+        
+        //RTools
+//                @State private var openedURL: URL = URL(string: "ghdsoftwareutility://ghd/?id=mck_app_cat_item&sys_id=092660981bf7bc1042a911b1b24bcbab&fmno=122912")!
+        
+        
         //for prod behaviour, uncomment below
-//        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://")!
+        @State private var openedURL: URL = URL(string: "ghdsoftwareutility://")!
         @State private var params: Dictionary<String, String>? = nil
         @State private var pkgInfo: Dictionary<String, String> = [:]
         
@@ -173,6 +201,16 @@ struct TransparentWindow: NSViewRepresentable {
         var body: some Scene {
             WindowGroup {
                 ZStack {
+                    Spacer()
+                        .handlesExternalEvents(preferring: Set(arrayLiteral: "*"), allowing: Set(arrayLiteral: "*"))
+                            .frame(width: 0, height: 0)
+                            .hidden()
+                    
+                    //this part is undocumented hocus pocus but it still prevents opening duplicate windows because swift is buggy pos
+//                    ContentView().handlesExternalEvents(preferring: Set(arrayLiteral: "*"), allowing: Set(arrayLiteral: "*"))
+//                        .frame(width: 0, height: 0)
+//                        .hidden()
+                    
                     VStack(spacing: 10) {
                         if (errorInfo.isError) {
                             ErrorView(errorInfo: errorInfo)
@@ -180,13 +218,15 @@ struct TransparentWindow: NSViewRepresentable {
                         }
                         else {
                             if (openedURL.query == nil) {
-                                //Spacer().frame(width: 0, height: 10)
+                                Spacer().frame(width: 0, height: 0) //this is needed to fix bugs with swfit layout and rendering don't ask why
                                 ErrorView(errorInfo: ErrorInfo(title: "Package info missing. Please contact GHD",
                                                                msg: "Query not found",
-                                                               active: true,
-                                                               allowRetry: true))
-                                    .frame(minWidth: 500, maxWidth: 500)
-                                Spacer().frame(width: 0, height: 10)
+                                                               active: true
+                                                              )
+                                )
+                                
+                                .frame(minWidth: 500, maxWidth: 500)
+                                Spacer().frame(width: 0, height: 20)
                             }
                             else if (pkgInfo == [:]) {
                                 ShellView(installed: $installView, pkgInfo: $pkgInfo, params: params ?? UrlHandler(input: openedURL))
@@ -197,26 +237,74 @@ struct TransparentWindow: NSViewRepresentable {
                                     installationInProgress: false,
                                     params: pkgInfo
                                     // for VLC demo, uncomment below along with alt params above
-    //                                params: UrlHandler(input: openedURL)
+                                    //                                    params: UrlHandler(input: openedURL)
                                 )
                             }
                         }
                     }
                     .fixedSize()
+                    .onAppear {
+//                        var logtext = ""
+//                        let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as NSURL
+//                        let fileUrl = documentsUrl.appendingPathComponent("ghdsu.log")
+                        
+                        let runningApp = NSRunningApplication.runningApplications(withBundleIdentifier: "com.McK.GHDSU")
+                        let openWindow = NSApplication.shared.windows
+                        Logger.log("Instances running: \(runningApp.count)")
+                        
+                        if openWindow.count > 1 {
+                            Logger.log("(onAppear)dismissing new window")
+                            let thisWindow = NSApplication.shared.windows.last!
+                            NSApplication.shared.window(withWindowNumber: thisWindow.windowNumber)!.close()
+                            Logger.log("(onAppear)new count: \(NSApplication.shared.windows.count)")
+                        }
+                        
+                        if runningApp.count > 1 {
+                            
+                            Logger.log("Closing...")
+//
+//                            var logtext = "Instances running: \(runningApp.count)"
+//                            let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as NSURL
+//                            let fileUrl = documentsUrl.appendingPathComponent("ghdsu.log")
+//
+                            
+                            runningApp.first!.activate(options: .activateAllWindows)
+                            runningApp.last!.terminate()
+                        }
+                        //try! logtext.write(to: fileUrl!, atomically: true, encoding: String.Encoding.utf8)
+                    }
                     .onOpenURL { url in
                         openedURL = url;
                         //for prod
-                        params = UrlHandler(input: url);
-                        //to skip shellview, uncomment below
-    //                    pkgInfo = UrlHandler(input: url);
+                        let runningApp = NSRunningApplication.runningApplications(withBundleIdentifier: Bundle.main.bundleIdentifier ?? "com.McK.GHDSU")
+                        let openWindow = NSApplication.shared.windows
+                        
+                        if openWindow.count > 1 {
+                            Logger.log("GHDSU is already open. Dismissing new window...")
+                            let thisWindow = NSApplication.shared.windows.last!
+                            NSApplication.shared.window(withWindowNumber: thisWindow.windowNumber)!.close()
+                        }
+                        
+                        if runningApp.count > 1 {
+                            Logger.log("GHDSU is already running. Terminating new instance...")
+                            runningApp.first!.activate(options: .activateAllWindows)
+                            runningApp.last!.terminate()
+                        }
+                        else { //otherwise parse url and do nothing else
+                            params = UrlHandler(input: url);
+                            //to skip shellview, uncomment below
+                            //pkgInfo = UrlHandler(input: url);
+                        }
                     }
+                    
                 }
             }
             .windowResizability(.contentSize)
             .windowStyle(.hiddenTitleBar)
+            .handlesExternalEvents(matching: Set(arrayLiteral: "*"))
         }
     }
-
+ 
 func UrlHandler(input: URL) -> [String: String] {
     //do the necessary validation first
     var dic: [String: String] = [:];

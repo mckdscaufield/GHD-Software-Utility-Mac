@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D8B2AF912C68472281D8B64 /* libPods-XCode-GHDSU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */; };
+		B657022629F95F6200FE4B13 /* AnimationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657022529F95F6200FE4B13 /* AnimationTesting.swift */; };
+		B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688682C29B0B6CF00D9F185 /* ShellView.swift */; };
+		B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */; };
+		B6C6560529AFB90F00AC8C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560429AFB90F00AC8C63 /* Assets.xcassets */; };
+		B6C6560829AFB90F00AC8C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */; };
+		B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4537329B0B7BE00F8D5DA /* InstallView.swift */; };
+		B6EAA95029E710AC0052D62B /* SplashShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EAA94F29E710AC0052D62B /* SplashShape.swift */; };
+		B6F2390C29E7115A002FCF06 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2390B29E7115A002FCF06 /* SplashView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCode-GHDSU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU.release.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU.release.xcconfig"; sourceTree = "<group>"; };
+		B657022529F95F6200FE4B13 /* AnimationTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTesting.swift; sourceTree = "<group>"; };
+		B688682C29B0B6CF00D9F185 /* ShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellView.swift; sourceTree = "<group>"; };
+		B6AF844A29C3553C00E93971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6C655FD29AFB90E00AC8C63 /* GHD Software Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GHD Software Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUApp.swift; sourceTree = "<group>"; };
+		B6C6560429AFB90F00AC8C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCode_GHDSU.entitlements; sourceTree = "<group>"; };
+		B6D4537329B0B7BE00F8D5DA /* InstallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallView.swift; sourceTree = "<group>"; };
+		B6EAA94F29E710AC0052D62B /* SplashShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashShape.swift; sourceTree = "<group>"; };
+		B6F2390B29E7115A002FCF06 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D2C737C023581F19B56C5551 /* Pods-XCode-GHDSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU.debug.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6C655FA29AFB90E00AC8C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8B2AF912C68472281D8B64 /* libPods-XCode-GHDSU.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B7B09D7B67B2314581972F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C655F429AFB90D00AC8C63 = {
+			isa = PBXGroup;
+			children = (
+				B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */,
+				B6C655FE29AFB90E00AC8C63 /* Products */,
+				B718D956C8A161F0EB1E7AA2 /* Pods */,
+				1B7B09D7B67B2314581972F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6C655FE29AFB90E00AC8C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C655FD29AFB90E00AC8C63 /* GHD Software Utility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2390F29E834F6002FCF06 /* Splash */,
+				B6AF844A29C3553C00E93971 /* Info.plist */,
+				B6C6560429AFB90F00AC8C63 /* Assets.xcassets */,
+				B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */,
+				B688682C29B0B6CF00D9F185 /* ShellView.swift */,
+				B6D4537329B0B7BE00F8D5DA /* InstallView.swift */,
+				B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */,
+				B6EAA94F29E710AC0052D62B /* SplashShape.swift */,
+				B6F2390B29E7115A002FCF06 /* SplashView.swift */,
+				B657022529F95F6200FE4B13 /* AnimationTesting.swift */,
+				B6C6560629AFB90F00AC8C63 /* Preview Content */,
+			);
+			path = "XCode-GHDSU";
+			sourceTree = "<group>";
+		};
+		B6C6560629AFB90F00AC8C63 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F2390F29E834F6002FCF06 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B718D956C8A161F0EB1E7AA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2C737C023581F19B56C5551 /* Pods-XCode-GHDSU.debug.xcconfig */,
+				AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6C655FC29AFB90E00AC8C63 /* GHD Software Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C6562229AFB90F00AC8C63 /* Build configuration list for PBXNativeTarget "GHD Software Utility" */;
+			buildPhases = (
+				805396C994D3B725EED39D72 /* [CP] Check Pods Manifest.lock */,
+				B6C655F929AFB90E00AC8C63 /* Sources */,
+				B6C655FA29AFB90E00AC8C63 /* Frameworks */,
+				B6C655FB29AFB90E00AC8C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GHD Software Utility";
+			productName = "XCode-GHDSU";
+			productReference = B6C655FD29AFB90E00AC8C63 /* GHD Software Utility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6C655F529AFB90D00AC8C63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B6C655FC29AFB90E00AC8C63 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B6C655F829AFB90D00AC8C63 /* Build configuration list for PBXProject "GHD Software Utility" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6C655F429AFB90D00AC8C63;
+			productRefGroup = B6C655FE29AFB90E00AC8C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6C655FC29AFB90E00AC8C63 /* GHD Software Utility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6C655FB29AFB90E00AC8C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C6560829AFB90F00AC8C63 /* Preview Assets.xcassets in Resources */,
+				B6C6560529AFB90F00AC8C63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		805396C994D3B725EED39D72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCode-GHDSU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6C655F929AFB90E00AC8C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EAA95029E710AC0052D62B /* SplashShape.swift in Sources */,
+				B657022629F95F6200FE4B13 /* AnimationTesting.swift in Sources */,
+				B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */,
+				B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */,
+				B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */,
+				B6F2390C29E7115A002FCF06 /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B6C6562029AFB90F00AC8C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6C6562129AFB90F00AC8C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B6C6562329AFB90F00AC8C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C737C023581F19B56C5551 /* Pods-XCode-GHDSU.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "XCode-GHDSU/XCode_GHDSU.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"XCode-GHDSU/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZWC9RWU52;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.McK.GHDSU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B6C6562429AFB90F00AC8C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "XCode-GHDSU/XCode_GHDSU.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"XCode-GHDSU/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZWC9RWU52;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.McK.GHDSU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6C655F829AFB90D00AC8C63 /* Build configuration list for PBXProject "GHD Software Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C6562029AFB90F00AC8C63 /* Debug */,
+				B6C6562129AFB90F00AC8C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C6562229AFB90F00AC8C63 /* Build configuration list for PBXNativeTarget "GHD Software Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C6562329AFB90F00AC8C63 /* Debug */,
+				B6C6562429AFB90F00AC8C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6C655F529AFB90D00AC8C63 /* Project object */;
+}
