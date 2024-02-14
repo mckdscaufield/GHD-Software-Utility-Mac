@@ -1,0 +1,6 @@
+module Pods_GHD_Software_Utility {
+  umbrella header "Pods-GHD Software Utility-umbrella.h"
+
+  export *
+  module * { export * }
+}

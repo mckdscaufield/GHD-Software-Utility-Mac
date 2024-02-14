@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D8B2AF912C68472281D8B64 /* libPods-XCode-GHDSU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */; };
+		A3BE3BEF46117F1FB37F9F68 /* libPods-GHD Software Utility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6579CC596C6DE10628B4794 /* libPods-GHD Software Utility.a */; };
 		B657022629F95F6200FE4B13 /* AnimationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657022529F95F6200FE4B13 /* AnimationTesting.swift */; };
 		B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688682C29B0B6CF00D9F185 /* ShellView.swift */; };
-		B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */; };
+		B6C6560129AFB90E00AC8C63 /* GHDSU.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6560029AFB90E00AC8C63 /* GHDSU.swift */; };
 		B6C6560529AFB90F00AC8C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560429AFB90F00AC8C63 /* Assets.xcassets */; };
 		B6C6560829AFB90F00AC8C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */; };
 		B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4537329B0B7BE00F8D5DA /* InstallView.swift */; };
@@ -19,16 +19,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCode-GHDSU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75ABA6E4460E70F77BAC8356 /* Pods-GHD Software Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHD Software Utility.release.xcconfig"; path = "Target Support Files/Pods-GHD Software Utility/Pods-GHD Software Utility.release.xcconfig"; sourceTree = "<group>"; };
+		A6579CC596C6DE10628B4794 /* libPods-GHD Software Utility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHD Software Utility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A668A8B49253008E2A171C01 /* Pods-GHD Software Utility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHD Software Utility.debug.xcconfig"; path = "Target Support Files/Pods-GHD Software Utility/Pods-GHD Software Utility.debug.xcconfig"; sourceTree = "<group>"; };
 		AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCode-GHDSU.release.xcconfig"; path = "Target Support Files/Pods-XCode-GHDSU/Pods-XCode-GHDSU.release.xcconfig"; sourceTree = "<group>"; };
 		B657022529F95F6200FE4B13 /* AnimationTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTesting.swift; sourceTree = "<group>"; };
 		B688682C29B0B6CF00D9F185 /* ShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellView.swift; sourceTree = "<group>"; };
 		B6AF844A29C3553C00E93971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B6C655FD29AFB90E00AC8C63 /* GHD Software Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GHD Software Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCode_GHDSUApp.swift; sourceTree = "<group>"; };
+		B6C6560029AFB90E00AC8C63 /* GHDSU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDSU.swift; sourceTree = "<group>"; };
 		B6C6560429AFB90F00AC8C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C6560729AFB90F00AC8C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCode_GHDSU.entitlements; sourceTree = "<group>"; };
+		B6C6560929AFB90F00AC8C63 /* GHDSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GHDSU.entitlements; sourceTree = "<group>"; };
 		B6D4537329B0B7BE00F8D5DA /* InstallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallView.swift; sourceTree = "<group>"; };
 		B6EAA94F29E710AC0052D62B /* SplashShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashShape.swift; sourceTree = "<group>"; };
 		B6F2390B29E7115A002FCF06 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8B2AF912C68472281D8B64 /* libPods-XCode-GHDSU.a in Frameworks */,
+				A3BE3BEF46117F1FB37F9F68 /* libPods-GHD Software Utility.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +52,7 @@
 		1B7B09D7B67B2314581972F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EA9FD8998E085D48522B34E /* libPods-XCode-GHDSU.a */,
+				A6579CC596C6DE10628B4794 /* libPods-GHD Software Utility.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,7 +60,7 @@
 		B6C655F429AFB90D00AC8C63 = {
 			isa = PBXGroup;
 			children = (
-				B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */,
+				B6C655FF29AFB90E00AC8C63 /* GHD Software Utility */,
 				B6C655FE29AFB90E00AC8C63 /* Products */,
 				B718D956C8A161F0EB1E7AA2 /* Pods */,
 				1B7B09D7B67B2314581972F6 /* Frameworks */,
@@ -73,22 +75,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6C655FF29AFB90E00AC8C63 /* XCode-GHDSU */ = {
+		B6C655FF29AFB90E00AC8C63 /* GHD Software Utility */ = {
 			isa = PBXGroup;
 			children = (
 				B6F2390F29E834F6002FCF06 /* Splash */,
 				B6AF844A29C3553C00E93971 /* Info.plist */,
 				B6C6560429AFB90F00AC8C63 /* Assets.xcassets */,
-				B6C6560029AFB90E00AC8C63 /* XCode_GHDSUApp.swift */,
+				B6C6560029AFB90E00AC8C63 /* GHDSU.swift */,
 				B688682C29B0B6CF00D9F185 /* ShellView.swift */,
 				B6D4537329B0B7BE00F8D5DA /* InstallView.swift */,
-				B6C6560929AFB90F00AC8C63 /* XCode_GHDSU.entitlements */,
+				B6C6560929AFB90F00AC8C63 /* GHDSU.entitlements */,
 				B6EAA94F29E710AC0052D62B /* SplashShape.swift */,
 				B6F2390B29E7115A002FCF06 /* SplashView.swift */,
 				B657022529F95F6200FE4B13 /* AnimationTesting.swift */,
 				B6C6560629AFB90F00AC8C63 /* Preview Content */,
 			);
-			path = "XCode-GHDSU";
+			path = "GHD Software Utility";
 			sourceTree = "<group>";
 		};
 		B6C6560629AFB90F00AC8C63 /* Preview Content */ = {
@@ -111,6 +113,8 @@
 			children = (
 				D2C737C023581F19B56C5551 /* Pods-XCode-GHDSU.debug.xcconfig */,
 				AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */,
+				A668A8B49253008E2A171C01 /* Pods-GHD Software Utility.debug.xcconfig */,
+				75ABA6E4460E70F77BAC8356 /* Pods-GHD Software Utility.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,7 +201,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-XCode-GHDSU-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GHD Software Utility-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -215,7 +219,7 @@
 				B657022629F95F6200FE4B13 /* AnimationTesting.swift in Sources */,
 				B688682D29B0B6CF00D9F185 /* ShellView.swift in Sources */,
 				B6D4537429B0B7BE00F8D5DA /* InstallView.swift in Sources */,
-				B6C6560129AFB90E00AC8C63 /* XCode_GHDSUApp.swift in Sources */,
+				B6C6560129AFB90E00AC8C63 /* GHDSU.swift in Sources */,
 				B6F2390C29E7115A002FCF06 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,9 +259,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "/Users/daniel_caufield/Projects/XCode-GHDSU/GHD Software Utility/XCode_GHDSU.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development: dscaufield@gmail.com (PALAZWGFKD)";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2ZWC9RWU52;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -274,7 +281,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/daniel_caufield/Projects/XCode-GHDSU/GHD Software Utility/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -316,9 +324,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "/Users/daniel_caufield/Projects/XCode-GHDSU/GHD Software Utility/XCode_GHDSU.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development: dscaufield@gmail.com (PALAZWGFKD)";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2ZWC9RWU52;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -329,7 +340,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/daniel_caufield/Projects/XCode-GHDSU/GHD Software Utility/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -340,27 +352,32 @@
 		};
 		B6C6562329AFB90F00AC8C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C737C023581F19B56C5551 /* Pods-XCode-GHDSU.debug.xcconfig */;
+			baseConfigurationReference = A668A8B49253008E2A171C01 /* Pods-GHD Software Utility.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "XCode-GHDSU/XCode_GHDSU.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "GHD Software Utility/GHDSU.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"XCode-GHDSU/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 2ZWC9RWU52;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
+				INFOPLIST_FILE = "GHD Software Utility/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GHD Software Utility";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.2;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.McK.GHDSU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,27 +388,32 @@
 		};
 		B6C6562429AFB90F00AC8C63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE7200BC1DCE5A2AA1E35F2A /* Pods-XCode-GHDSU.release.xcconfig */;
+			baseConfigurationReference = 75ABA6E4460E70F77BAC8356 /* Pods-GHD Software Utility.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "XCode-GHDSU/XCode_GHDSU.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "GHD Software Utility/GHDSU.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"XCode-GHDSU/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 2ZWC9RWU52;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCode-GHDSU/Info.plist";
+				INFOPLIST_FILE = "GHD Software Utility/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GHD Software Utility";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.2;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.McK.GHDSU;
 				PRODUCT_NAME = "$(TARGET_NAME)";

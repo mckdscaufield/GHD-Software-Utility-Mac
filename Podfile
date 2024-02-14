@@ -3,7 +3,7 @@
 platform :osx, '10.14.6'
 pod 'Alamofire'
 
-target 'XCode-GHDSU' do
+target 'GHD Software Utility' do
   # Comment the next line if you don't want to use dynamic frameworks
   #use_frameworks!
 
@@ -17,5 +17,4 @@ target 'XCode-GHDSU' do
   #target 'XCode-GHDSUUITests' do
     # Pods for testing
  # end
-
 end
